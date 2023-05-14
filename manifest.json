@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "Letterboxd Private Notes",
+  "description": "Add private notes to films in Letterboxd",
+  "version": "1.0",
+  "icons": {
+    "16": "icons/letterboxd-icon-16-16.png",
+    "32": "icons/letterboxd-icon-32-32.png",
+    "48": "icons/letterboxd-icon-48-48.png",
+    "128": "icons/letterboxd-icon-128-128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/letterboxd-icon-16-16.png",
+      "32": "icons/letterboxd-icon-32-32.png",
+      "48": "icons/letterboxd-icon-48-48.png",
+      "128": "icons/letterboxd-icon-128-128.png"
+    },
+    "default_title": "My Extension",
+    "default_popup": "popup/popup.html"
+  },
+  "background": {  
+
+  },
+  "permissions": [
+
+  ],
+  "author": "zh754@nyu.edu",
+  "content_scripts": [
+    {
+      "js": [
+        "scripts/content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "matches": [
+        "https://letterboxd.com/*"
+      ]
+    }
+  ]
+}
